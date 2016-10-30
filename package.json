@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Hendri Pretorius <pretorh@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "node build.js"
+  },
   "dependencies": {
     "useref": "^1.2.0"
   }

@@ -1,0 +1,11 @@
+{
+  "name": "test-useref",
+  "version": "0.0.0",
+  "description": "testing useref for html replacement",
+  "main": "index.js",
+  "author": "Hendri Pretorius <pretorh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "useref": "^1.2.0"
+  }
+}

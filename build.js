@@ -1,5 +1,6 @@
 var useref = require("useref");
 var fs = require("fs");
+var userefImport = require("./useref-import");
 
 var opts = {
     src: "./src/",
@@ -12,11 +13,7 @@ opts.output = opts.dest + "index.html";
 var source = fs.readFileSync(opts.input).toString();
 
 // transform
-var result = useref(source, {
-    import: function(c, target) {
-        return fs.readFileSync(opts.src + target).toString();
-    }
-});
+var result = useref(source, userefImport(opts.src));
 
 // output
 if (!fs.existsSync(opts.dest)) {
